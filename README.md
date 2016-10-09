@@ -15,5 +15,5 @@ The aim of this simple project is to demonstrate how to add simple marquee efect
 Not supported yet.
 * Carthage:  
 Not supported yet.
-* Manual Installation:
+* Manual Installation:  
 Just copy TinyMarqueeLabel.swift into your project.
