@@ -5,8 +5,15 @@ The aim of this simple project is to demonstrate how to add simple marquee efect
 
 # Environment
 
-Xcode 7.3
+* Xcode 7.3
+* Swift 2.x or later
+* iOS 8.x or later
 
-Swift 2.x or later
+# Installation
 
-iOS 8.x or later
+CocoaPods: Not supported yet.
+
+Carthage: Not supported yet.
+
+Manual Installation:
+
