@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Demo
-//
-//  Created by hoge on 10/9/16.
-//  Copyright © 2016 hoge. All rights reserved.
-//
 
 import UIKit
 

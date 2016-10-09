@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC289F3F1DAA0A9000B2BCEE /* TinyMarqueeLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = DC289F3E1DAA0A9000B2BCEE /* TinyMarqueeLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC956FFA1DAA133A00131078 /* TinyMarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC956FF91DAA133A00131078 /* TinyMarqueeLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC289F3B1DAA0A8F00B2BCEE /* TinyMarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TinyMarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC289F3E1DAA0A9000B2BCEE /* TinyMarqueeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinyMarqueeLabel.h; sourceTree = "<group>"; };
 		DC289F401DAA0A9000B2BCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC956FF91DAA133A00131078 /* TinyMarqueeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyMarqueeLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +46,8 @@
 		DC289F3D1DAA0A8F00B2BCEE /* TinyMarqueeLabel */ = {
 			isa = PBXGroup;
 			children = (
-				DC289F3E1DAA0A9000B2BCEE /* TinyMarqueeLabel.h */,
 				DC289F401DAA0A9000B2BCEE /* Info.plist */,
+				DC956FF91DAA133A00131078 /* TinyMarqueeLabel.swift */,
 			);
 			path = TinyMarqueeLabel;
 			sourceTree = "<group>";
@@ -59,7 +59,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC289F3F1DAA0A9000B2BCEE /* TinyMarqueeLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC956FFA1DAA133A00131078 /* TinyMarqueeLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,28 +230,33 @@
 		DC289F441DAA0A9000B2BCEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TinyMarqueeLabel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.tsukemenokazaki.TinyMarqueeLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		DC289F451DAA0A9000B2BCEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TinyMarqueeLabel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.tsukemenokazaki.TinyMarqueeLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +283,7 @@
 				DC289F451DAA0A9000B2BCEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

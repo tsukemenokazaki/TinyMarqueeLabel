@@ -12,7 +12,25 @@
 		DC289F581DAA0AEE00B2BCEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC289F561DAA0AEE00B2BCEE /* Main.storyboard */; };
 		DC289F5A1DAA0AEE00B2BCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC289F591DAA0AEE00B2BCEE /* Assets.xcassets */; };
 		DC289F5D1DAA0AEE00B2BCEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC289F5B1DAA0AEE00B2BCEE /* LaunchScreen.storyboard */; };
+		DC956FFB1DAA169800131078 /* TinyMarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC956FF61DAA12B100131078 /* TinyMarqueeLabel.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC956FF51DAA12B100131078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC956FF11DAA12B100131078 /* TinyMarqueeLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC289F3B1DAA0A8F00B2BCEE;
+			remoteInfo = TinyMarqueeLabel;
+		};
+		DC956FFC1DAA16B100131078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC956FF11DAA12B100131078 /* TinyMarqueeLabel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC289F3A1DAA0A8F00B2BCEE;
+			remoteInfo = TinyMarqueeLabel;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DC289F4F1DAA0AEE00B2BCEE /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +40,7 @@
 		DC289F591DAA0AEE00B2BCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC289F5C1DAA0AEE00B2BCEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC289F5E1DAA0AEE00B2BCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC956FF11DAA12B100131078 /* TinyMarqueeLabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TinyMarqueeLabel.xcodeproj; path = ../TinyMarqueeLabel.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC956FFB1DAA169800131078 /* TinyMarqueeLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +58,7 @@
 		DC289F461DAA0AEE00B2BCEE = {
 			isa = PBXGroup;
 			children = (
+				DC956FF11DAA12B100131078 /* TinyMarqueeLabel.xcodeproj */,
 				DC289F511DAA0AEE00B2BCEE /* Demo */,
 				DC289F501DAA0AEE00B2BCEE /* Products */,
 			);
@@ -64,6 +85,14 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		DC956FF21DAA12B100131078 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC956FF61DAA12B100131078 /* TinyMarqueeLabel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +107,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DC956FFD1DAA16B100131078 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
@@ -110,12 +140,28 @@
 			mainGroup = DC289F461DAA0AEE00B2BCEE;
 			productRefGroup = DC289F501DAA0AEE00B2BCEE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DC956FF21DAA12B100131078 /* Products */;
+					ProjectRef = DC956FF11DAA12B100131078 /* TinyMarqueeLabel.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DC289F4E1DAA0AEE00B2BCEE /* Demo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DC956FF61DAA12B100131078 /* TinyMarqueeLabel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TinyMarqueeLabel.framework;
+			remoteRef = DC956FF51DAA12B100131078 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DC289F4D1DAA0AEE00B2BCEE /* Resources */ = {
@@ -141,6 +187,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC956FFD1DAA16B100131078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyMarqueeLabel;
+			targetProxy = DC956FFC1DAA16B100131078 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC289F561DAA0AEE00B2BCEE /* Main.storyboard */ = {
@@ -252,6 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.tsukemenokazaki.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.tsukemenokazaki.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +344,7 @@
 				DC289F631DAA0AEE00B2BCEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
