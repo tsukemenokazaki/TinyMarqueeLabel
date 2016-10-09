@@ -6,5 +6,7 @@ The aim of this simple project is to demonstrate how to add simple marquee efect
 # Environment
 
 Xcode 7.3
+
 Swift 2.x or later
+
 iOS 8.x or later
